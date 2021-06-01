@@ -35,10 +35,11 @@ public class MainActivity extends AppCompatActivity {
         menu.add(0,1,1,"Italian");
 
         if (v == tvTranslatedText) {
-            wordClicked = "hello";
+            wordClicked = "1st";
         } else if (v == tvTranslatedText2) {
-            wordClicked = "bye";
+            wordClicked = "2nd";
         }
+        menu.setHeaderTitle(wordClicked + " row is clicked");
     }
 
     @Override
